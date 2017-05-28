@@ -1,5 +1,5 @@
 (defface tekadv-mode-comment
-  '((((min-colors 8)) :foreground "brightblack"))
+'((((min-colors 8)) :foreground "brightblack"))
   "Face for comment in tekadv-mode")
 
 (defface tekadv-mode-title
@@ -27,8 +27,8 @@
   "Face for default in tekadv-mode")
 
 (setq tekadv-keyword
-      '(("" ("^#define[ \t]+" (beginning-of-line) nil (0 'tekadv-mode-define)))
-	("" ("#.*" (beginning-of-line) nil (0 'tekadv-mode-comment)))
+      '(("" ("\$[A-Za-z0-9_]*" (beginning-of-line) nil (0 'tekadv-mode-define)))
+	("" ("#.*$" (beginning-of-line) nil (0 'tekadv-mode-comment)))
 	("^[\t ]+" ("[_a-z0-9]+:" (beginning-of-line) nil (0 'tekadv-mode-subtitle)))
 	("^[_a-z]+:" ("[0-9]+[ \t]*$" (beginning-of-line) nil (0 'tekadv-mode-id)))
 	("" ("[_a-z]*:" (beginning-of-line) nil (0 'tekadv-mode-title)))))

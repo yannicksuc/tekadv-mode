@@ -1,6 +1,13 @@
-player:
 object:2009
 	clickable:109
 	pos:22 33
+	ok:lol
+	lol:mdr c'est trop drol
+	xd: lol lol
 
-Basic text	#Comment
+Basic text	#Commennt
+
+macro: MDR ldeDD
+#define MDR
+#define MDR lol xdd
+#define lol  dedeze
